@@ -19,6 +19,6 @@ Pass MD5 hash into function which can be hash of IP address, email, username, or
 
 <script src="identitiles.js"></script>
 <script>
-identitiles('canvas', '356ac8f205de4837377957243a5ed469');
+    identitiles('canvas', '356ac8f205de4837377957243a5ed469');
 </script>
 ```
