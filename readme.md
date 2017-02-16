@@ -9,7 +9,7 @@ Identicons are widely used as a avatars that need to visually identify users whi
 ![avatar][img1]
 
 ### How does it work?
-Identitiles use 32 byte MD5 hash to draw a 3x3 unique square. It's a simple JS library that will draw on a canvas, so no actual image will be stored on disk. Logic behind this is that we add one additional byte to the MD5 hash so that we have 33 bytes in total. First square use first 6 bytes for its color. Next 7 squares will use 3 bytes color, and last square will use 6 bytes color. Since color can only be represented as 3 or 6 bytes, we needed to add extra byte to the total 32 of MD5 hash.
+Identitiles use 32 characters MD5 hash to draw a 3x3 unique square. It's a simple JS library that will draw on a canvas, so no actual image will be stored on disk. Logic behind this is that we add one additional character to the MD5 hash so that we have 33 characters in total. First square use first 6 characters for its color. Next 7 squares will use 3 characters color, and last square will use 6 characters color. Since color can only be represented as 3 or 6 characters, we needed to add extra character (F) to the total 32 of MD5 hash.
 
 ### Usage
 Pass MD5 hash into function which can be hash of IP address, email, username, or anything else that comes to your mind.
